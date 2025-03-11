@@ -1,8 +1,8 @@
 let modInfo = {
-	name: "The Modding Tree",
-	id: "mymod",
-	author: "",
-	pointsName: "points",
+	name: "Bee Tree",
+	id: "ILOVEBEES71",
+	author: "Askinga",
+	pointsName: "bees",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "",
@@ -43,6 +43,7 @@ function getPointGen() {
 		return new OmegaNum(0)
 
 	let gain = new OmegaNum(1)
+	if(hasUpgrade('f', 11)) gain = gain.times(2)
 	return gain
 }
 
